@@ -11,6 +11,7 @@ generalization bounds of first-order bilevel minimax algorithms and investigatin
 connections to practical settings, e.g., max inner iterations, step-size schedules and
 meta sample sizes.
 
+[![ArXiv](https://arxiv.org/abs/2604.20115)](Paper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.4%2B-red.svg)](https://pytorch.org/)

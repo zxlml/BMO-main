@@ -113,27 +113,12 @@ python run_experiment.py --exp A --img_size 32 --T 5 --repeats 2
 # Experiment B (Fig. 2/3): SSGDA, GAP & errors vs. outer iterations T, per step-size schedule
 python run_experiment.py --exp B --img_size 32 --T 600 --gamma1 0.01
 
-# Large-scale runs of Experiment A can be split into single (m1, seed) jobs:
+# Experiment A 的大规模运行可拆分为单次 (m1, seed) 任务：
 python run_expA_split.py --m1 500 --seed 100
 python plot_expA.py
 ```
 
-### Key Findings on Simulation Data
-
-| Observation | Result | Paper trend |
-|---|---|---|
-| GAP vs. inner iterations `k` (m1=500) | monotonically grows, +0.012 → +0.023 (raw +0.031 → +0.069) | ✅ Fig. 1 |
-| Larger meta set ⇒ smaller GAP | m1=1000: GAP +0.002 → +0.005 (≪ m1=500) | ✅ O(T/m1) bound |
-| Validation error plateau | 0.2–0.3 in the adversarial balance region | ✅ Fig. 3a |
-| Fixed η instability | largest train-error variance (0.34 ± 0.19), fast but erratic convergence | ✅ Fig. 3b |
-| Decaying η reaches the paper's error range | val 0.206 / test 0.182 (γ=0.01, T=600) | ✅ Fig. 3 |
-
-> **Note:** the systematic GAP growth of **SSGDA** (Fig. 3c) requires the paper-scale setup
-> (160×160 images, T=50–200); on small-scale CPU runs the lower level learns too slowly to
-> remain in the balance region. **TSGDA-1** reproduces GAP growth already at feasible scale.
-
-**Recommended balance-region configuration:** `--width_g 64 --width_d 4 --noise_std 0.1
---gamma1 0.003 --gamma_schedule fixed --eta 0.005 --eta_schedule exp --eta_decay 0.95`
+All outputs (CSV + PNG) are written to the `results/` directory.
 
 ## 📖 Reference
 

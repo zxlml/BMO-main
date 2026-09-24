@@ -2,13 +2,12 @@
 
 [English](README.md) | 简体中文
 
-# BMO：一阶双层极小极大优化
-
-**Fine-grained Analysis on the Stability and Generalization for First-order Bilevel Minimax Optimization**
+# On the Stability and Generalization of First-order Bilevel Minimax Optimization
 
 本仓库提供了验证一阶双层极小极大算法理论泛化界的官方实现，并研究其与实际设置
 （如最大内层迭代数、步长调度、元样本规模）之间的联系。
 
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2604.20115-red.svg)](https://arxiv.org/abs/2604.20115)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.4%2B-red.svg)](https://pytorch.org/)
@@ -159,3 +158,17 @@ python plot_expA.py
 ## 📄 许可证
 
 本项目基于 [MIT License](LICENSE) 发布。
+
+## 🔖 引用本文
+
+如果您觉得本工作对您有帮助，请引用：
+
+```bibtex
+@article{zhang2026stability,
+  title={On the Stability and Generalization of First-order Bilevel Minimax Optimization},
+  author={Zhang, Xuelin and Yuan, Peipei},
+  journal={arXiv preprint arXiv:2604.20115},
+  year={2026},
+  url={https://arxiv.org/abs/2604.20115}
+}
+```

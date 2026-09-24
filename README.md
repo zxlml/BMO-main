@@ -2,16 +2,14 @@
 
 English | [简体中文](README_zh.md)
 
-# BMO: First-order Bilevel Minimax Optimization
-
-**Fine-grained Analysis on the Stability and Generalization for First-order Bilevel Minimax Optimization**
+# On the Stability and Generalization of First-order Bilevel Minimax Optimization
 
 This repository provides the official implementation for validating the theoretical
 generalization bounds of first-order bilevel minimax algorithms and investigating their
 connections to practical settings, e.g., max inner iterations, step-size schedules and
 meta sample sizes.
 
-[![ArXiv](https://img.shields.io/badge/Python-3.8%2B-green.svg)]([Paper](https://arxiv.org/abs/2604.20115))
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2604.20115-red.svg)](https://arxiv.org/abs/2604.20115)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.4%2B-red.svg)](https://pytorch.org/)
@@ -113,14 +111,14 @@ python run_experiment.py --exp A --img_size 32 --T 5 --repeats 2
 # Experiment B (Fig. 2/3): SSGDA, GAP & errors vs. outer iterations T, per step-size schedule
 python run_experiment.py --exp B --img_size 32 --T 600 --gamma1 0.01
 
-# Experiment A 的大规模运行可拆分为单次 (m1, seed) 任务：
+# Large-scale runs of Experiment A can be split into single (m1, seed) jobs:
 python run_expA_split.py --m1 500 --seed 100
 python plot_expA.py
 ```
 
 All outputs (CSV + PNG) are written to the `results/` directory.
 
-## 📖 Reference
+## 📚 References
 
 If you find this repository useful, please also consider citing the works below, which this
 implementation builds upon.
@@ -167,3 +165,17 @@ implementation builds upon.
 ## 📄 License
 
 This project is released under the [MIT License](LICENSE).
+
+## 🔖 Cite This Paper
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{zhang2026stability,
+  title={On the Stability and Generalization of First-order Bilevel Minimax Optimization},
+  author={Zhang, Xuelin and Yuan, Peipei},
+  journal={arXiv preprint arXiv:2604.20115},
+  year={2026},
+  url={https://arxiv.org/abs/2604.20115}
+}
+```

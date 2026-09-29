@@ -2,7 +2,7 @@
 
 English | [简体中文](README_zh.md)
 
-# BMO: Bilevel Minimax Optimization — Baselines and Improved Solvers
+# Hypergradient-Corrected Momentum Methods for Bilevel Minimax Optimization with Stability and Generalization Guarantees
 
 This repository implements and validates three families of bilevel minimax optimization (BMO)
 algorithms for robust data processing (denoising / generation): the **first-order baselines**

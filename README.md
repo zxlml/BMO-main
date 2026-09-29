@@ -2,7 +2,7 @@
 
 English | [简体中文](README_zh.md)
 
-# Hypergradient-Corrected Momentum Methods for Bilevel Minimax Optimization with Stability and Generalization Guarantees
+# Fine-Grained Stability and Generalization Analysis of Bilevel Minimax Optimization: From First-Order Solvers to Hypergradient-Corrected Momentum Methods
 
 This repository implements and validates three families of bilevel minimax optimization (BMO)
 algorithms for robust data processing (denoising / generation): the **first-order baselines**
